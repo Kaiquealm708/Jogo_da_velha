@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  background: linear-gradient(blue, #fff, green);
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1{
+  font-size: 50px;
+  color: green;
+  margin-top: 50px;
+  text-shadow: 10px 5px 10px solid black;
+}
+
+/*botões*/
+#buttons-container{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#buttons-container button{
+  border: 3px solid blue;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin: 0 10px;
+  background-color: rgb(123, 177, 106);
+  font-weight: bold;
+}
+/*jogo*/
+#container{
+  width: 300px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*centralizar uma div na tela*/
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.box{
+  border: 5px solid #000;
+  height: 100px;
+  box-sizing: border-box;
+  flex: 1 1 33%; /*garantir as 3 divs por linha*/
+}
+
+#block1{
+  border-top: none;
+  border-left: none;
+}
+
+#block2{
+  border-top: none;
+}
+
+#block3{
+  border-top: none;
+  border-right: none;
+}
+
+#block4{
+  border-left: none;
+}
+
+#block6{
+  border-right: none;
+}
+
+#block7{
+  border-left: none;
+  border-bottom: none;
+}
+
+#block8{
+  border-bottom: none;
+}
+
+#block9{
+  border-right: none;
+  border-bottom: none;
+}
+
+/*simbolos*/
+.x {
+  font-size: 65px;
+  color: blue;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.o{
+  width: 60px;
+  height: 60px;
+  border: 5px solid green;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+/*placar*/
+#scoreboard-container{
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 25px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#x-scoreboard{
+  color: blue;
+  margin-right: 3px;
+}
+
+#o-scoreboard{
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  border: 2px solid green;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+
+.score box{
+  display: inline-block;
+  margin: 0 20px;
+}
+
+#message p{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 205px;
+  left: 0;
+  right: 0;
+  width: 500px;
+  background-color: #000;
+  font-size: 80px;
+  color: #fff;
+  padding: 20px;
+}
+
+.hide{
+  margin-top: 10px;
+  display: none !important;
+}
+
